@@ -1,8 +1,65 @@
-<p>
-    {{showText}} 
+<!-- {{getColor()}} -->
+
+<!-- ngstyle -->
+
+<!-- <p style="color:red">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p> -->
+
+
+
+<ul>
+    <li *ngFor='let eachName of studentArray' [ngStyle]="{'color': getColor(eachName.name)}">
+        {{eachName.name}} {{eachName.pass}}
+    </li>
+</ul>
+
+
+
+
+
+<!-- 
+<ng-template ngIf='toggleDisable;else localref'>
+<p >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+</ng-template> -->
+
+<!-- <p *ngIf='toggleDisable;else localref'>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
 
+<ng-template #localref>
+    <p>
+        This Is else condition block
+    </p>
+</ng-template>
+
+
+<button (click)='toggleButton()'>Toggle</button> -->
+
+
+
+
+<!-- <p>
+    {{showText}} 
+</p> -->
+<!-- 
 <button disabled='{{toggleDisable}}'>CLICK ME</button>
 
 <button (click)='toggleButton()'>Toggle</button>
+
+{{toggleDisable}} -->
+
+<!-- <input id="someId" value="Debasish"> -->
+<!-- 
+<button (click)='callAlert()'>Call Alert</button>
+
+
+<input  [(ngModel)]='showText'>
+<input  [(ngModel)]='showText'>
+<br>
+
+{{showText}} -->
+
 

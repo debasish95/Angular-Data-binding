@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 
 import { Demo1Component } from './demo1/demo1.component';
 
-
+import { FormsModule } from '@angular/Forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import { Demo1Component } from './demo1/demo1.component';
     Demo1Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
