@@ -9,9 +9,14 @@
 
 
 <ul>
-    <li *ngFor='let eachName of studentArray' [ngStyle]="{'color': getColor(eachName.name)}">
+    <!-- <li *ngFor='let eachName of studentArray' [ngStyle]="{'color': getColor(eachName.name)}">
         {{eachName.name}} {{eachName.pass}}
-    </li>
+    </li> -->
+    <li *ngFor='let eachName of studentArray'
+     [ngClass]="{'text-green': eachName.pass == 'true','text-red': eachName.pass == 'false'}">
+
+            {{eachName.name}} {{eachName.pass}}
+        </li>
 </ul>
 
 
