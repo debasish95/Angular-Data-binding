@@ -1,0 +1,22 @@
+
+<h4>1.2 DEVELOPER-LIST</h4>
+<hr>
+
+
+<div class="row">
+
+
+    <div class="col-lg-6 mt-2" *ngFor='let emp of devList'>
+        <div class="card">
+            <div class="card-header">{{emp.Name}} ( {{emp.empId}} )</div>
+            <div class="card-body">
+                <div [ngClass]='emp.className'>
+                        <label>Exp:</label> {{emp.exp}}yrs <br>
+                </div>
+                <label>Exp:</label> {{emp.exp}}yrs <br>
+                <label>D.O.J:</label> {{emp.doj}}
+            </div>
+        </div>
+    </div>
+   
+</div>
